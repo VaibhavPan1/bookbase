@@ -41,7 +41,9 @@ function Signin() {
     setError(null);
 
     try {
-      const response = await axios.post(`http://localhost:8080/auth/login`, credentials);
+
+      //8501 - MEMBER SERVICE
+      const response = await axios.post(`http://localhost:8501/auth/login`, credentials);
 
       const memberToken = response.data;
       const parts = memberToken.split(".");
