@@ -115,7 +115,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        `http://localhost:8501/auth/register`,
+        `http://localhost:8080/auth/register`,
         newMember
       );
 
